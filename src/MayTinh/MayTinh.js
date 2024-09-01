@@ -87,7 +87,7 @@ export default class MayTinh extends Component {
 					<div id="CurResult">{this.state.result || 0}</div>
 				</div>
 
-				{calculatorButtons.map(button => (
+				{this.calculatorButtons.map((button, index) => (
 					<div key={index} className={`button ${button.class}`} onClick={button.action}>
 						{button.label}
 					</div>
