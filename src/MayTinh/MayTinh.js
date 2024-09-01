@@ -18,7 +18,7 @@ export default class MayTinh extends Component {
 			this.state.result === 'NaN',
 		];
 
-		if (disallowedConditions.some(condition => condition));
+		if (disallowedConditions.some(condition => condition)) return;
 
 		this.setState(previousResult => ({ result: previousResult.result.toString() + val.toString() }));
 	};
